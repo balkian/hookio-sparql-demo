@@ -54,6 +54,11 @@ app.listen(3000, function () {
 var io = sio.listen(app)
   , nicknames = {};
 
+io.configure(function () { 
+      io.set("transports", ["xhr-polling"]); 
+        io.set("polling duration", 10); 
+});
+
 io.sockets.on('connection', function (socket) {
   socket.on('user message', function (msg) {
     console.log('User message:'+msg);
