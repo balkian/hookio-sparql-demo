@@ -1,9 +1,14 @@
 {
-"name": "Web4.0",
+"name": "Hookio-sparql-example",
 "version" : "0.0.1",
 "dependencies":{
 	"socket.io":"*",
 	"hook.io":"*",
 	"Hook.io-mailer":"git+https://github.com/balkian/Hookio-Mailer.git"
+    "express": "2.5.5",
+    "jade": "0.16.4",
+    "stylus": "0.19.0",
+    "nib": "0.2.0"
+
 }
 }
